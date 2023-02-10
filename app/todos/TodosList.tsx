@@ -11,7 +11,7 @@ const fetchTodos = async () => {
 
 async function TodosList() {
   const todos = await fetchTodos();
-  console.log(todos);
+  // console.log(todos);
 
   return (
     <div>
