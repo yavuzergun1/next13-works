@@ -6,6 +6,11 @@ type PageProps = {
   };
 };
 
+const fetchTodo = async (todoId:string) => {
+
+}
+
+
 function TodoPage({ params: { todoId } }: PageProps) {
   return <div>TodoPage: {todoId} </div>;
 }
