@@ -22,6 +22,7 @@ const search = async (searchTerm: string) => {
   const response = await fetch(
     `http://serpapi.com/search.json?q=${searchTerm}&api_key=${process.env.API_KEY}`
   );
+// throw new Error("Something Wrong!!!");
 
   const data: SearchResult = await response.json();
   return data;
