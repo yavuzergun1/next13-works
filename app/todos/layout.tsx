@@ -7,12 +7,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex ml-8">
+    <main className=" ml-8">
+      <div className="-1">{children} </div>
       <div>
         {/* @ts-ignore */}
         <TodosList />
       </div>
-      <div className="flex-1">{children} </div>
     </main>
   );
 }
