@@ -2,7 +2,7 @@ import React from "react";
 import { Todo } from "../../../typings";
 import Notfound from "./not-found";
 
-export const dynamicParams = true; /* dynamic paramsı aktif eder veya iptal eder */
+export const dynamicParams = true; /* dynamic paramsı aktif eder veya iptal eder. default true dur */
 
 type PageProps = {
   params: {
@@ -42,6 +42,8 @@ async function TodoPage({ params: { todoId } }: PageProps) {
 }
 
 export default TodoPage;
+
+// Yukarıdaki cashleme için aşağıda bu fonksiyonu yazdık. Ama sebebini tam çözemedim
 
 export async function generateStaticParams() {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
