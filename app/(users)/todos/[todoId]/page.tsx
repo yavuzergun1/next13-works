@@ -1,5 +1,5 @@
 import React from "react";
-import { Todo } from "../../../typings";
+import { Todo } from "../../../../typings";
 import Notfound from "./not-found";
 
 export const dynamicParams = true; /* dynamic paramsı aktif eder veya iptal eder. default true dur */
