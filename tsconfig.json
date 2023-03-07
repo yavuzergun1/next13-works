@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "pages/api/posts/[id].js", "pages/api/posts/[id].js"  ],
   "exclude": [
     "node_modules"
   ]
